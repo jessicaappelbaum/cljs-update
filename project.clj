@@ -52,8 +52,7 @@
              {:output-to "target/cljsbuild/public/js/app.js"
               :output-dir "target/uberjar"
               :optimizations :advanced
-              :pretty-print  false
-              :infer-externs true}}
+              :pretty-print  false}}
             :app
             {:source-paths ["src/cljs" "src/cljc" "env/dev/cljs"]
              :compiler
@@ -63,7 +62,8 @@
               :output-dir "target/cljsbuild/public/js/out"
               :source-map true
               :optimizations :none
-              :pretty-print  true}}}}
+              :pretty-print  true
+              :infer-externs true}}}}
 
 
   :figwheel
