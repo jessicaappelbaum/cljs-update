@@ -16,6 +16,7 @@
                  [org.clojure/clojurescript "1.9.456"
                   :scope "provided"]
                  [secretary "1.2.3"]
+                 [tvanhens/think.semantic-ui "0.1.0-SNAPSHOT"]
                  [venantius/accountant "0.1.7"
                   :exclusions [org.clojure/tools.reader]]]
 
