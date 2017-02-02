@@ -16,9 +16,10 @@
                  [org.clojure/clojurescript "1.9.456"
                   :scope "provided"]
                  [secretary "1.2.3"]
-                 [tvanhens/think.semantic-ui "0.1.0-SNAPSHOT"]
                  [venantius/accountant "0.1.7"
                   :exclusions [org.clojure/tools.reader]]]
+
+  :jvm-opts ^:replace ["-Xmx1g" "-server"]
 
   :plugins [[lein-environ "1.0.2"]
             [lein-cljsbuild "1.1.1"]
