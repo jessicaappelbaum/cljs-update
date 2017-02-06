@@ -1,15 +1,16 @@
 (ns cljs-update.core
   (:require [clojure.string :as str]
             [goog.object]
+            #_[node_modules.semantic-ui-react :as semantic]
             [reagent.core :as reagent :refer [atom]]
             [reagent.session :as session]
             [secretary.core :as secretary :include-macros true]
             [accountant.core :as accountant]))
 
 
-(def ^:private semantic-ui js/semanticUIReact)
+#_(def ^:private semantic-ui js/semanticUIReact)
 
-(defn $ [kw]
+#_(defn $ [kw]
   (let [c-keys (str/split (name kw) ".")]
     (apply goog.object/getValueByKeys semantic-ui c-keys)))
 
@@ -18,7 +19,7 @@
 
 (defn home-page []
   [:div [:h2 "Welcome to cljs-update"]
-   #_[:> ($ :Button) {:href "/elements"} "Elements"]
+   [:> ($ :Button) {:href "/elements"} "Elements"]
    [:div [:a {:href "/about"} "go to about page"]]])
 
 (defn about-page []

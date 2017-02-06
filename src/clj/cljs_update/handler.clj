@@ -19,9 +19,7 @@
            :content "width=device-width, initial-scale=1"}]
    (include-css
      (if (env :dev) "/css/site.css" "/css/site.min.css")
-     "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css")
-   (include-js "/js/semantic-ui-react.inc.js"
-               "/js/semantic-ui-react.ext.js")])
+     "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css")])
 
 (defn loading-page []
   (html5

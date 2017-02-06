@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
                  [ring-server "0.4.0"]
                  [reagent "0.6.0"]
                  [reagent-utils "0.2.0"]
@@ -22,7 +22,7 @@
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
 
   :plugins [[lein-environ "1.0.2"]
-            [lein-cljsbuild "1.1.1"]
+            [lein-cljsbuild "1.1.5"]
             [lein-asset-minifier "0.2.7"
              :exclusions [org.clojure/clojure]]]
 
